@@ -51,9 +51,9 @@ if __name__ == '__main__':
 			if f1len == 0 and f2len != 0:
 				while(True):
 					fdataline = f2.readline()
-					fdataline = fdataline.strip()
 					if not fdataline:
 						break
+					fdataline = fdataline.strip()
 					f2data.append(fdataline)
 					fdataline = ""
 				print "Dict1 is empty!"
