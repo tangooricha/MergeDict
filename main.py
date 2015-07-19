@@ -57,23 +57,19 @@ if __name__ == '__main__':
 					f2data.append(fdataline)
 					fdataline = ""
 				print "Dict1 is empty!"
-				print "Dict2 is ", f2data
 				f3data = sorted(list(set(f2data)))
-				print "Output dict is ", f3data
 				f3.write(string.join(f3data, "\n"))
 
 			elif f1len != 0 and f2len == 0:
 				while(True):
 					fdataline = f1.readline()
-					fdataline = fdataline.strip()
 					if not fdataline:
 						break
+					fdataline = fdataline.strip()
 					f1data.append(fdataline)
 					fdataline = ""
-				print "Dict1 is ", f1data
 				print "Dict2 is empty!"
 				f3data = sorted(list(set(f1data)))
-				print "Output dict is ", f3data
 				f3.write(string.join(f3data, "\n"))
 
 			else:
@@ -91,8 +87,5 @@ if __name__ == '__main__':
 						break
 					f2data.append(fdataline)
 					fdataline = ""
-				print "Dict1 is ", f1data
-				print "Dict2 is ", f2data
 				f3data = sorted(list(set(f1data + f2data)))
-				print "Output dict is ", f3data
 				f3.write(string.join(f3data, "\n"))
